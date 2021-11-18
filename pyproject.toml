@@ -1,0 +1,48 @@
+[tool.black]
+line-length = 79
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs
+    | \.git
+    | \.hg
+    | \.mypy_cache
+    | \.pytest_cache
+    | \.tox
+    | \venv
+    | \env
+    | \.venv
+    | \.env
+    | \.vscode
+    | _build
+    | buck-out
+    | build
+    | dist
+    | static
+    | media/
+    | deployments
+    | scripts
+    | requirements
+    | templates
+    | migrations
+    | venv
+    | .venv
+  )/
+)
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+balanced_wrapping = true
+combine_as_imports = false
+combine_star = true
+include_trailing_comma = true
+known_django = "django"
+line_length = 79
+order_by_type = true
+skip = "migrations"
+skip_glob = "**/migrations/**,*/venv/*,*/.venv/*"
+sections = "FUTURE,STDLIB,DJANGO,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"

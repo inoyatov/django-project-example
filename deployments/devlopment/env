@@ -1,0 +1,9 @@
+export DJANGO_SETTINGS_MODULE="config.settings.development"
+export ENV_DJANGO_SECRET_KEY="django-insecure-!l5m3zn-44owar0r+qu743c1xraw*cp#bon3)oo4+waix$73x2"
+export ENV_DJANGO_TOOLBAR_SHOW_TOOLBAR_CALLBACK="true"
+export ENV_POSTGRES_DB_NAME="lmtool"
+export ENV_POSTGRES_DB_HOST="localhost"
+export ENV_POSTGRES_DB_PORT="15432"
+export ENV_POSTGRES_DB_CONN_MAX_AGE=0
+export ENV_POSTGRES_DB_USER="lmtool"
+export ENV_POSTGRES_DB_PASSWORD="lmtool"
